@@ -1,0 +1,7 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
