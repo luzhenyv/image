@@ -1,4 +1,4 @@
-package com.todata.image;
+package com.todata.image.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,12 +32,15 @@ public class ImageController {
         // 保存
         if (file.isEmpty())
             throw new Exception();
+        long time1 = System.currentTimeMillis();
         image = ImageIO.read(file.getInputStream());
-        save(file);
+//        save(file);
 //         返回
         map.put("code",0);
         map.put("msg","");
         map.put("data", process(image));
+        long time2 = System.currentTimeMillis();
+        System.out.println("Time is "+(time2-time1));
         return map;
     }
 

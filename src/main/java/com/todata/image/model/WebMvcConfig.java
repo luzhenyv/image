@@ -1,4 +1,4 @@
-package com.todata.image;
+package com.todata.image.model;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

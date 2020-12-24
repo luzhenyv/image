@@ -28,7 +28,7 @@
         </div>
         <div id="uploadView" class="layer-photos-demo layui-hide">
             <hr>
-            <img layer-pid="1" layer-src="大图地址" src="缩略图" alt="上传成功后渲染" style="max-width: 196px">
+            <img layer-pid="1" layer-src="大图地址" src="缩略图" alt="渲染图像" style="max-width: 196px">
         </div>
     </div>
 
@@ -65,7 +65,7 @@ layui.use(['element', 'upload'], function(){
         }
         ,done: function(res){
             layer.closeAll('loading');
-            layer.msg('上传成功');
+            layer.msg('渲染成功');
             $('#uploadBar').addClass('layui-hide');
             $('#uploadView').removeClass('layui-hide').find('img').attr({'src': res.data, 'layer-src': res.data});
             // console.log(res)

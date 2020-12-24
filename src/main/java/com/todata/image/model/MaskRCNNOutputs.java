@@ -1,4 +1,4 @@
-package com.todata.image;
+package com.todata.image.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

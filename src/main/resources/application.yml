@@ -5,3 +5,12 @@ spring:
   thymeleaf:
     cache: false
     encoding: UTF-8
+
+netty:
+  server:
+    port: 8081
+  websocket:
+    port: 8081
+    ip: 127.0.0.1
+    path: /channel
+    max-frame-size: 10240

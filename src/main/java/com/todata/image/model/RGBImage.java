@@ -1,8 +1,6 @@
-package com.todata.image;
+package com.todata.image.model;
 
-import javax.imageio.IIOException;
 import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageInputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -87,7 +85,7 @@ public class RGBImage implements Cloneable{
     }
 
     @Override
-    protected Object clone() {
+    public Object clone() {
         RGBImage image = null;
         try {
             image = (RGBImage) super.clone();
